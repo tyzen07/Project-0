@@ -1,7 +1,74 @@
-#textbar{
-    width: 200;
-    border-style: round;
+#logo{
+    display: block;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    margin-left: 42.5%;
 }
-body{
-    background: green;
+
+#searchbarContainer{
+    margin:0 auto;
+    width:70%;
+    border-radius:30px;
+    border:1px solid #dcdcdc;
+    padding: 1.5%;
+}
+
+#searchbarContainer:hover{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+
+#searchbarContainer:focus-within{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;
+}
+#textbar{
+    height:30px;
+    border:none;
+    width:90%;
+    font-size:16px;
+    outline: none;
+}
+
+#srchIcon{
+    height:20px;
+    position:relative;
+    top:5px;
+    left:auto;
+}
+
+#btnContainer{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 40%;
+    
+}
+
+.buttons{
+    background-color: #f5f5f5;
+    border:none;
+    color:#707070;
+    font-size:15px;
+    padding: 10px 20px;
+    margin:5px;
+    border-radius:4px;
+    outline:none;
+}
+
+.buttons:hover{
+    border: 1px solid #c8c8c8;
+    padding: 9px 19px;
+    color:#808080;
+}
+
+.buttons:focus{
+    border:1px solid #4885ed;
+    padding: 9px 19px;
+}
+
+
+.container{
+    display: block;
+    padding: 20px;
+    margin: auto;
+    width: 50%;
 }
