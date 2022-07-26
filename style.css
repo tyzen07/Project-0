@@ -1,16 +1,40 @@
-#logo{
-    display: block;
-    margin-top: 15%;
-    margin-bottom: 5%;
-    margin-left: 42.5%;
+
+#maincontainer{
+    /* background-color: grey; */
+    margin-top:20%;
+    position:relative;
 }
 
-#searchbarContainer{
+.container{
+    justify-content: center;
+}
+
+#formcontainer{
+    /* background-color: red; */
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#logocontainer{
+    /* background-color: yellow; */
     margin:0 auto;
-    width:70%;
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/*---------------------------- SEARCH BAR ----------------------------*/
+
+#searchbarContainer{
+    /* background-color: yellow; */
+    margin:0 auto;
+    width:600px;
     border-radius:30px;
     border:1px solid #dcdcdc;
-    padding: 1.5%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
 }
 
 #searchbarContainer:hover{
@@ -21,26 +45,40 @@
     box-shadow: 1px 1px 8px 1px #dcdcdc;
     outline:none;
 }
+
+@media only screen and (min-width : 150px) and (max-width : 780px){
+    #searchbarContainer{
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+
 #textbar{
     height:30px;
     border:none;
-    width:90%;
+    width:100%;
     font-size:16px;
     outline: none;
+    border-radius:30px;
+    display: block;
+    margin-left: 5px;
 }
 
 #srchIcon{
     height:20px;
-    position:relative;
     top:5px;
-    left:auto;
+    margin-left:5px;
 }
 
+/*---------------------------- BUTTONS ----------------------------*/
+
 #btnContainer{
+    /* background-color: blue; */
     margin: 0 auto;
     margin-top: 30px;
     width: 40%;
-    
+    align-items: center;
+    display: flex;
 }
 
 .buttons{
@@ -66,9 +104,3 @@
 }
 
 
-.container{
-    display: block;
-    padding: 20px;
-    margin: auto;
-    width: 50%;
-}
