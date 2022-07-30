@@ -10,34 +10,38 @@
                 <li><a class="links" href="index.html">Google Search</a></li>
             </ul>
         </header>
-        <div id="Tablemaincontainer">
-            <div id="Tableformcontainer"> 
+        <div id="AdvMaincontainer">
+            <div id="AScontainer">
+                <label id="ASlbl">Advanced Search</label>
+            </div>
+            <hr>
+            <div id="Advformcontainer"> 
                 <form action="http://www.google.com/images" method="get" role="search">
-                    <div id="TableContainer">
+                    <div id="textbarContainer">
+                        <div>
+                            <label id="toplbl">Find pages with. . .</label>
+                        </div>
+                        <div class="inputcontainer">
+                            <div class="lblContainer"><label class="desc">all these words:</label></div>
+                            <div class="inputTxtContainer"><input class="txtbar" type="text" name="q"></div>
+                        </div>
+                        <div class="inputcontainer">
+                            <div class="lblContainer"><label class="desc">this exact word or phrase:</label></div>
+                            <div class="inputTxtContainer"><input class="txtbar" type="text" name="q"></div>
+                        </div>
+                        <div class="inputcontainer">
+                            <div class="lblContainer"><label class="desc">any of these words:</label></div>
+                            <div class="inputTxtContainer"><input class="txtbar" type="text" name="q"></div>
+                        </div>
+                        <div class="inputcontainer">
+                            <div class="lblContainer"><label class="desc">none of these words:</label></div>
+                            <div class="inputTxtContainer"><input class="txtbar" type="text" name="q"></div>
+                        </div>
+                        <div id="AdvbtnContainer" class="inputcontainer">
+                            <div id="innerbtnContainer"><input id="Advbuttons" class="buttons" type="submit" value="Advanced Search"></div>
+                        </div>
+                    </div>
 
-                        <table>
-                            <tr><td><p>Find pages with. . .</p></td></tr>
-                            <tr>
-                                <td class="desc">all these words:</td>
-                                <td class="inputbar"><input class="txtbar" type="text" name="q"></td>
-                            </tr>
-                            <tr>
-                                <td class="desc">this exact word or phrase:</td>
-                                <td class="inputbar"><input class="txtbar" type="text" name="q"></td>
-                            </tr>
-                            <tr>
-                                <td class="desc">any of these words:</td>
-                                <td class="inputbar"><input class="txtbar" type="text" name="q"></td>
-                            </tr>
-                            <tr>
-                                <td class="desc">none of these words:</td>
-                                <td class="inputbar"><input class="txtbar" type="text" name="q"></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div id="btnContainer" class="container">
-                        <input class="buttons" type="submit" value="Google Search">
-                    </div>
                 </form>
             </div>
         </div>
