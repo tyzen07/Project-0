@@ -1,6 +1,6 @@
+/*---------------------------- CONTAINERS ----------------------------*/
 
 #maincontainer{
-    /* background-color: grey; */
     margin-top:15%;
     position:sticky;
 }
@@ -10,14 +10,12 @@
 }
 
 #formcontainer{
-    /* background-color: red; */
     display: block;
     padding: 20px;
     margin: 0 auto;
 }
 
 #logocontainer{
-    /* background-color: yellow; */
     margin:0 auto;
     display: flex;
     margin-bottom: 10px;
@@ -51,7 +49,6 @@ li a:hover {
 /*---------------------------- SEARCH BAR ----------------------------*/
 
 #searchbarContainer{
-    /* background-color: yellow; */
     margin:0 auto;
     width:600px;
     height: auto;
@@ -95,10 +92,9 @@ li a:hover {
     margin-left:5px;
 }
 
-/*---------------------------- BUTTON ----------------------------*/
+/*---------------------------- BUTTONS ----------------------------*/
 
 #btnContainer{
-    /* background-color: blue; */
     margin: 0 auto;
     margin-top: 30px;
     width: 40%;
@@ -130,8 +126,12 @@ li a:hover {
 
 /*---------------------------- ADVANCED SEARCH ----------------------------*/
 
+#Advformcontainer{
+    vertical-align: baseline;
+}
+
 #AScontainer{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     border:none;
     padding-left: 45px;
 }
@@ -156,18 +156,10 @@ li a:hover {
     height: 25px;
     padding: 1px 8px;
     display: inline-block;
-
-    /* background-color: field;
-    margin: 0em;
-    padding: 1px 2px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial; */
 }
 
 .txtbar:focus-within{
-    background: linear-gradient(gray white white);
+    background-image: linear-gradient(rgba(128, 128, 128, 0.164), white ,white, white, white);
     outline-color: blue;
     outline-style:inset;
     border: 0 solid;
@@ -176,42 +168,37 @@ li a:hover {
 #textbarContainer{
     margin-top: 30px;
     margin-left: 45px;
-    justify-content: left;
+    display: block;
 }
 
-.inputcontainer{
-    display: flex;
-    flex-wrap: wrap;
-    /* display:grid;
-    grid-template-columns: 150px 500px;
-    grid-column-gap: 10px; */
+.inputcontainer{ 
+    display: block;
     margin-top: 20px;
     height: 30px;
-    background-color: #4885ed;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .lblContainer{
     width: 150px;
+    display: inline-block;
 }
 
 .inputTxtContainer{
     width: 70%;
-    /* background-color: red; */
+    display: inline-block;
 }
 
 /*---------------------------- ADVANCED SEARCH BUTTON----------------------------*/
 
 #AdvbtnContainer{
-    /* margin-top: 30px;
-    display: flex;
-    justify-content: right;
-    width:73.3%; */
-    /* margin-left: 60%; */
+    width:100%;
+    margin-top: 10px;
 }
 
 #innerbtnContainer{
-    margin-left: 70%;
+    display: inline-block;
+    width: 70%;
 }
 
 #Advbuttons{
@@ -223,6 +210,7 @@ li a:hover {
     margin:5px;
     border-radius:2px;
     outline:none;
+    float: right;
 }
 
 #Advbuttons:hover{
@@ -243,16 +231,7 @@ li a:hover {
 }
 
 @media only screen and (min-width : 150px) and (max-width : 780px){
-    /* #AdvbtnContainer{
-        margin-left: auto;
-        justify-content: right;
-    } */
-
-    #innerbtnContainer{
-        margin-left: 30%;
-    }
-
-    #inputcontainer{
-        width: 98%;
-    }
+    .txtbar{
+		width: 90%;
+	}
 }
